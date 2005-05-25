@@ -2,7 +2,7 @@ Summary:	Linux DiskTool
 Name:		disktool
 Version:	1.5.2
 Release:	1
-License:	GPL v2
+License:	Freeware
 Group:		Applications/Shells	
 Source0:	http://freshmeat.net/redir/disktool/39170/url_tgz/dt-%{version}-1.i386.tar.gz
 # Source0-md5:	5963e29f5072bea72fe23e096bc33574
