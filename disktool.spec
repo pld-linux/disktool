@@ -1,12 +1,14 @@
-Summary:	Linux DiskTool
+Summary:	Linux DiskTool - file manager for text terminal
+Summary(pl):	Linux DiskTool - zarz±dca plików dla terminala tekstowego
 Name:		disktool
 Version:	1.5.2
 Release:	1
 License:	Freeware
 Group:		Applications/Shells	
-Source0:	http://freshmeat.net/redir/disktool/39170/url_tgz/dt-%{version}-1.i386.tar.gz
+Source0:	http://www.freewebs.com/mlsoft/dt-%{version}-1.i386.tar.gz
 # Source0-md5:	5963e29f5072bea72fe23e096bc33574
-URL:		http://www.freewebs.com/mlsoft
+URL:		http://www.freewebs.com/mlsoft/
+ExclusiveArch:	%{ix86}
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -24,17 +26,33 @@ written in Pascal and not in C. The source code is available upon
 email request, but you will need to install the FPC compiler to
 compile the modules.
 
+%description -l pl
+DiskTool to ma³y, w pe³ni funkcjonalny zarz±dca plików dla konsoli
+linuksowej albo terminala typu xterm. Ma kopiowanie, przenoszenie i
+zmianê nazw, zaznaczanie plików do wykonywania tej samej akcji (takiej
+jak kopiowanie czy usuwanie) na wszystkich zaznaczonych plikach, pe³n±
+obs³ugê katalogów (przenoszenie, zmianê nazw, usuwanie), obs³ugê
+uprawnieñ i w³asno¶ci (chmod/chown), edycjê i tworzenie plików,
+zarz±dcê RPM do instalowania i przegl±dania plików .rpm, centrum
+archiwizacji obs³uguj±ce pliki .tar, .gz, .tar.gz i .zip oraz w pe³ni
+konfigurowalne kolory i wybór edytorów. Wszystkie funkcje s± dostêpne
+pod pojedynczymi skrótami klawiaturowymi i wymagaj± bardzo ma³ej
+znajomo¶ci Linuksa. DiskTool zosta³ napisany w Pascalu, a nie C. Kod
+¼ród³owy jest dostêpny na ¿±danie poczt± elektroniczn±, ale do
+kompilacji modu³ów potrzebny jest kompilator FPC.
+
 %prep
 %setup -q -n dt-install
 
 %install
 rm -rf $RPM_BUILD_ROOT
+install -d $RPM_BUILD_ROOT%{_mandir}/man1
 
 install -D dt $RPM_BUILD_ROOT%{_bindir}/dt
 install -D ale $RPM_BUILD_ROOT%{_bindir}/ale
 
-install -D dt.1.gz $RPM_BUILD_ROOT%{_mandir}/dt.1.gz
-install -D ale.1.gz $RPM_BUILD_ROOT%{_mandir}/ale.1.gz
+gzip -dc dt.1.gz >$RPM_BUILD_ROOT%{_mandir}/man1/dt.1
+gzip -dc ale.1.gz >$RPM_BUILD_ROOT%{_mandir}/man1/ale.1
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -43,4 +61,4 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc ale.doc dt.doc
 %attr(755,root,root) %{_bindir}/*
-%{_mandir}/*
+%{_mandir}/man1/*
