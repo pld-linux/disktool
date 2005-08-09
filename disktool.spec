@@ -1,12 +1,12 @@
 Summary:	Linux DiskTool - file manager for text terminal
 Summary(pl):	Linux DiskTool - zarz±dca plików dla terminala tekstowego
 Name:		disktool
-Version:	1.5.2
+Version:	1.5.5
 Release:	1
 License:	Freeware
 Group:		Applications/Shells	
 Source0:	http://www.freewebs.com/mlsoft/dt-%{version}-1.i386.tar.gz
-# Source0-md5:	5963e29f5072bea72fe23e096bc33574
+# Source0-md5:	df92838462332d5dea7b8811bca32bd3
 URL:		http://www.freewebs.com/mlsoft/
 ExclusiveArch:	%{ix86}
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
