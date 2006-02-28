@@ -4,7 +4,7 @@ Name:		disktool
 Version:	1.5.5
 Release:	1
 License:	Freeware
-Group:		Applications/Shells	
+Group:		Applications/Shells
 Source0:	http://www.freewebs.com/mlsoft/dt-%{version}-1.i386.tar.gz
 # Source0-md5:	df92838462332d5dea7b8811bca32bd3
 URL:		http://www.freewebs.com/mlsoft/
