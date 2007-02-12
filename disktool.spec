@@ -1,5 +1,5 @@
 Summary:	Linux DiskTool - file manager for text terminal
-Summary(pl):	Linux DiskTool - zarz±dca plików dla terminala tekstowego
+Summary(pl.UTF-8):   Linux DiskTool - zarzÄ…dca plikÃ³w dla terminala tekstowego
 Name:		disktool
 Version:	1.5.5
 Release:	1
@@ -26,20 +26,20 @@ written in Pascal and not in C. The source code is available upon
 email request, but you will need to install the FPC compiler to
 compile the modules.
 
-%description -l pl
-DiskTool to ma³y, w pe³ni funkcjonalny zarz±dca plików dla konsoli
+%description -l pl.UTF-8
+DiskTool to maÅ‚y, w peÅ‚ni funkcjonalny zarzÄ…dca plikÃ³w dla konsoli
 linuksowej albo terminala typu xterm. Ma kopiowanie, przenoszenie i
-zmianê nazw, zaznaczanie plików do wykonywania tej samej akcji (takiej
-jak kopiowanie czy usuwanie) na wszystkich zaznaczonych plikach, pe³n±
-obs³ugê katalogów (przenoszenie, zmianê nazw, usuwanie), obs³ugê
-uprawnieñ i w³asno¶ci (chmod/chown), edycjê i tworzenie plików,
-zarz±dcê RPM do instalowania i przegl±dania plików .rpm, centrum
-archiwizacji obs³uguj±ce pliki .tar, .gz, .tar.gz i .zip oraz w pe³ni
-konfigurowalne kolory i wybór edytorów. Wszystkie funkcje s± dostêpne
-pod pojedynczymi skrótami klawiaturowymi i wymagaj± bardzo ma³ej
-znajomo¶ci Linuksa. DiskTool zosta³ napisany w Pascalu, a nie C. Kod
-¼ród³owy jest dostêpny na ¿±danie poczt± elektroniczn±, ale do
-kompilacji modu³ów potrzebny jest kompilator FPC.
+zmianÄ™ nazw, zaznaczanie plikÃ³w do wykonywania tej samej akcji (takiej
+jak kopiowanie czy usuwanie) na wszystkich zaznaczonych plikach, peÅ‚nÄ…
+obsÅ‚ugÄ™ katalogÃ³w (przenoszenie, zmianÄ™ nazw, usuwanie), obsÅ‚ugÄ™
+uprawnieÅ„ i wÅ‚asnoÅ›ci (chmod/chown), edycjÄ™ i tworzenie plikÃ³w,
+zarzÄ…dcÄ™ RPM do instalowania i przeglÄ…dania plikÃ³w .rpm, centrum
+archiwizacji obsÅ‚ugujÄ…ce pliki .tar, .gz, .tar.gz i .zip oraz w peÅ‚ni
+konfigurowalne kolory i wybÃ³r edytorÃ³w. Wszystkie funkcje sÄ… dostÄ™pne
+pod pojedynczymi skrÃ³tami klawiaturowymi i wymagajÄ… bardzo maÅ‚ej
+znajomoÅ›ci Linuksa. DiskTool zostaÅ‚ napisany w Pascalu, a nie C. Kod
+ÅºrÃ³dÅ‚owy jest dostÄ™pny na Å¼Ä…danie pocztÄ… elektronicznÄ…, ale do
+kompilacji moduÅ‚Ã³w potrzebny jest kompilator FPC.
 
 %prep
 %setup -q -n dt-install
