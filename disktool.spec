@@ -1,5 +1,5 @@
 Summary:	Linux DiskTool - file manager for text terminal
-Summary(pl.UTF-8):   Linux DiskTool - zarządca plików dla terminala tekstowego
+Summary(pl.UTF-8):	Linux DiskTool - zarządca plików dla terminala tekstowego
 Name:		disktool
 Version:	1.5.5
 Release:	1
